@@ -3,11 +3,11 @@
 <head>
     <link rel="stylesheet" href="wir.css">
 </head>
-<span class="ball"></span>
+<span id="ball" class="ball"></span>
 <button onclick='moveme();'>click me</button>
 <script>
     function moveme() {
-        //document.getElementById("obrazek").className = 'scaleDown';
+        document.getElementById("ball").style.transform = "translate(400px,100px)";
     }
 </script>
 
