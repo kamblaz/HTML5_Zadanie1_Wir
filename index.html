@@ -3,12 +3,16 @@
 <head>
     <link rel="stylesheet" href="wir.css">
 </head>
-<span id="ball" class="ball"></span>
+<div class="img-container">
+    <img id="wir" style="top: 0px; left: 0px;" src="wir.jpeg">
+    <div id="ballContainer" class="ballContainer">
+        <span id="ball" class="ball">
+    </div>
+</div>
 <button onclick='moveme();'>click me</button>
 <script>
     function moveme() {
-        document.getElementById("ball").style.transform = "translate(400px,100px)";
+        document.getElementById("ballContainer").className = "test"; 
     }
 </script>
-
 </html>

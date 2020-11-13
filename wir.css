@@ -1,20 +1,45 @@
-body {
-  background-image: url("wir.jpeg");
-  background-repeat: no-repeat;
-  }
+.ballContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
 
-.ball {
-    margin-left: -50px;
-    margin-top: -20px;
-  height: 150px;
-  width: 150px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
+.ball{
+    height: 80px;
+    width: 80px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
 }
 
 button {
-     position:absolute;
-     top:0;
-     right:0;
- }
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.img-container {
+    display: inline-block;
+    position: relative;
+}
+
+.test {
+    left: 510px;
+    position: absolute;
+    top: 400px;
+    -webkit-animation: test 20.1s linear; /* Chrome, Safari 5 */
+}
+
+@-webkit-keyframes test {
+    0% { 	-webkit-transform: rotate(0deg) scale(1) translate(-520px,-410px) rotate(0deg); }
+    10%{-webkit-transform: rotate(180deg) scale(0.9) translate(-380px,-320px) rotate(-180deg);}
+    20%{-webkit-transform: rotate(360deg) scale(0.8) translate(-380px,-320px) rotate(-360deg);}
+    30%{-webkit-transform: rotate(540deg) scale(0.7) translate(-300px,-260px) rotate(-540deg);}
+    40%{-webkit-transform: rotate(720deg) scale(0.6) translate(-300px,-260px) rotate(-720deg);}
+    50%{-webkit-transform: rotate(900deg) scale(0.5) translate(-260px,-220px) rotate(-900deg);}
+    60%{-webkit-transform: rotate(1080deg) scale(0.4) translate(-260px,-220px) rotate(-1080deg);}
+    70%{-webkit-transform: rotate(1260deg) scale(0.3) translate(-280px,-240px) rotate(-1260deg);}
+    80%{-webkit-transform: rotate(1440deg) scale(0.2) translate(-280px,-240px) rotate(-1440deg);}
+	100%   {  -webkit-transform: rotate(3600deg) scale(0.1) translateX(0px) rotate(-3600deg); }
+}
